@@ -84,7 +84,7 @@ public class RNIsDeviceRootedModule extends ReactContextBaseJavaModule {
 		} catch (NoSuchProviderException e) {
 			promise.resolve(e);
 		} catch (NoSuchPaddingException e) {
-			promise.resolve(e);
+			promise.resolve(e); 
 		}
 		try {
 			cipher.init(Cipher.ENCRYPT_MODE, stringToPublicKey(publicKey,promise));
